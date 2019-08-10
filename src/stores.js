@@ -21,7 +21,7 @@ export default {
                     mass: 50,
                     img: sushiSyake,
                     special: 'hit',
-                    id:1
+                    id: 1
                 },
                 {
                     name: 'Унаги',
@@ -30,7 +30,7 @@ export default {
                     mass: 65,
                     img: sushiUnagi,
                     special: '',
-                    id:2
+                    id: 2
                 },
                 {
                     name: 'Магуро',
@@ -39,7 +39,7 @@ export default {
                     mass: 50,
                     img: maguro,
                     special: '',
-                    id:3
+                    id: 3
                 },
                 {
                     name: 'Эби',
@@ -48,7 +48,7 @@ export default {
                     mass: 55,
                     img: ebi,
                     special: 'hit',
-                    id:4
+                    id: 4
                 },
                 {
                     name: 'Абокадо',
@@ -57,9 +57,9 @@ export default {
                     mass: 60,
                     img: abokado,
                     special: 'veg',
-                    id:5
+                    id: 5
                 }
-                ]
+            ]
         },
         {
             group: 'Роллы',
@@ -71,7 +71,7 @@ export default {
                     mass: 250,
                     img: phila,
                     special: 'hit',
-                    id:6
+                    id: 6
                 },
                 {
                     name: 'Сякэ ролл',
@@ -80,7 +80,7 @@ export default {
                     mass: 190,
                     img: syake,
                     special: '',
-                    id:7
+                    id: 7
                 },
                 {
                     name: 'Тэкка ролл',
@@ -89,7 +89,7 @@ export default {
                     mass: 190,
                     img: tekka,
                     special: '',
-                    id:8
+                    id: 8
                 },
                 {
                     name: 'Унаги ролл',
@@ -98,7 +98,7 @@ export default {
                     mass: 190,
                     img: unagi,
                     special: 'hit',
-                    id:9
+                    id: 9
                 },
                 {
                     name: 'Яки Хамачи',
@@ -107,10 +107,9 @@ export default {
                     mass: 230,
                     img: talat,
                     special: '',
-                    id:10
+                    id: 10
                 }
             ]
         }
-
-
-    ]}
+    ]
+}

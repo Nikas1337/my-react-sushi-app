@@ -1,4 +1,3 @@
-import {Link} from "react-router-dom";
 import React from "react";
 import Store from "../stores";
 import './css/Menu.css'
@@ -6,14 +5,12 @@ import './css/Menu.css'
 function MenuList(store) {
     let menuArr = []
     let allAmounts = {}
-    // console.log(Store.menu.length)
     for (let i = 0; i < Store.menu.length; i++) {
         for (let j = 0; j < Store.menu[i].items.length; j++) {
             allAmounts[Store.menu[i].items[j].id] = 0
         }
     }
     for (let key in store.state.cart.cart) {
-        // console.log(store.state.cart.cart[key].id)
         allAmounts[store.state.cart.cart[key].id]++
     }
     console.log(allAmounts)
@@ -25,7 +22,6 @@ function MenuList(store) {
                         <span>{item.mass}</span> г.
                     </div>
                     <div className={'sushi-h-' + item.special}>
-                        {/*{item.special}*/}
                     </div>
                 </div>
                 <div className="sushi-img-wrap">
@@ -57,10 +53,7 @@ function MenuList(store) {
                         <i className="fas fa-plus"></i>
                     </span>
                     </div>
-
-
                 </div>
-
             </div>
         )
     }

@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import React from "react";
 import img1 from '../img/icons/002-sushi.png'
 import img11 from '../img/icons/002-sushi-white.png'
@@ -10,11 +10,8 @@ import img4 from '../img/icons/004-noodles.png'
 import img44 from '../img/icons/004-noodles-white.png'
 import img5 from '../img/icons/005-soup.png'
 import img55 from '../img/icons/005-soup-white.png'
-import SushiOne from "../components/SushiOne";
 import MenuList from "../containers/MenuList";
-// import Home from "../views/Home";
-// import User from "../views/User";
-// import Cart from "../views/Cart";
+
 const SushiPicker = {
     display: 'flex',
     justifyContent:'space-between',
@@ -24,7 +21,6 @@ function Menu() {
 
 
     return (
-        <Router>
             <div  className='container'>
                 <div style={SushiPicker} className="sushi-picker">
                     <NavLink onMouseOver={e => (e.currentTarget.firstChild.src = img11)}
@@ -63,8 +59,6 @@ function Menu() {
                 </div>
                 <MenuList />
             </div>
-        </Router>
-
     );
 }
 

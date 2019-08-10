@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Link, NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import logo from "../img/logo.png";
 const Logo = {
 
@@ -75,10 +75,8 @@ const Cost = {
 
 window.addEventListener('scroll', function (ev) {
     if (window.pageYOffset > 65) {
-        // (document.querySelector('.nav-wrap')).classList.add('active')
         (document.querySelector('.all-head')).classList.add('active')
     } else {
-        // (document.querySelector('.nav-wrap')).classList.remove('active')
         (document.querySelector('.all-head')).classList.remove('active')
     }
 })

@@ -1,116 +1,142 @@
 .container {
-  width: 970px;
-  margin: auto;
+    width: 970px;
+    margin: auto;
 }
+
 .button-pink {
     color: #ffffff;
     background: #fd1c44;
     transition: .2s;
 }
+
 .button-pink:hover {
     background: #ff3f5f;
 }
+
 .lang-choose span {
-  margin-right: 10px;
+    margin-right: 10px;
 }
+
 .nav-wrapper {
-  background: no-repeat -50px -100px url("./img/sushi/pille-riin.jpg");
-  height: 500px;
+    background: no-repeat -50px -100px url("./img/sushi/pille-riin.jpg");
+    height: 500px;
 }
+
 .all-head {
     transition: .2s;
     width: 100%;
     z-index: 100;
 }
+
 .all-head.active {
     position: fixed;
 }
+
 .all-head.active .nav-wrap {
     top: 40px;
-    background: rgba(255,255,255,.85);
+    background: rgba(255, 255, 255, .85);
 }
+
 .nav-wrap {
-  position: absolute;
-  top: 60px;
-  width: 100%;
-  padding: 15px 0;
-  transition: background .2s, padding .2s;
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    padding: 15px 0;
+    transition: background .2s, padding .2s;
 }
+
 .nav-wrap.active {
-  top: 0;
-  position: fixed;
-  padding: 15px 0;
+    top: 0;
+    position: fixed;
+    padding: 15px 0;
 }
+
 .nav-link {
     transition: .2s;
 }
+
 .nav-link:hover {
     color: #fd1c44;
 }
+
 .discount {
-  background: no-repeat 110% 25% url("./img/sushi/sushi_main.png");
-  margin-top: 60px;
+    background: no-repeat 110% 25% url("./img/sushi/sushi_main.png");
+    margin-top: 60px;
 }
+
 .discount h1 {
-  margin-top: 80px;
+    margin-top: 80px;
 }
+
 .sushi-picker-elem {
-  height: 130px;
-  width: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  transition: .2s;
-  cursor: pointer;
+    height: 130px;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: .2s;
+    cursor: pointer;
 }
+
 .sushi-picker-elem img {
-  display: block;
+    display: block;
 }
+
 .sushi-picker-elem h4 {
-  width: 100%;
-  text-align: center;
-  color: #ffffff;
-  display: none;
-  font-family: 'Stalinist One';
-  margin: 10px 0 0;
-  font-size: 1.2rem;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    display: none;
+    font-family: 'Stalinist One';
+    margin: 10px 0 0;
+    font-size: 1.2rem;
 }
+
 .highlight {
     color: #fd1c44;
     margin-right: 10px;
     font-weight: bold;
 }
+
 .sushi-picker-active {
-  background: #ed143a;
+    background: #ed143a;
 }
+
 .sushi-picker-elem:hover {
-  background: #fd1c44;
+    background: #fd1c44;
 }
+
 .sushi-picker-elem:hover h4 {
-  display: block;
+    display: block;
 }
+
 .sushi-picker-active h4 {
-  display: block;
+    display: block;
 }
+
 .footer {
     margin-top: 180px;
 }
+
 .footer-main {
     height: 160px;
     display: flex;
     justify-content: space-between;
 }
+
 .footer-contacts {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+
 .footer-hrefs {
     display: flex;
     font-weight: bold;
 }
+
 .footer-hrefs ul {
     list-style: none;
     padding-left: 0;
@@ -120,21 +146,26 @@
 .footer-hrefs li {
     margin-bottom: 10px;
 }
+
 .footer-form {
 
 }
+
 .input-field {
     height: 50px;
     margin: 20px 0;
 }
-.input-field input{
+
+.input-field input {
     height: 100%;
     padding: 10px;
     color: #c8c8c8;
 }
+
 .input-field input:focus {
     color: #7f7f7f;
 }
+
 .input-field button {
     height: 100%;
     width: 50px;
@@ -145,38 +176,46 @@
     padding: 20px;
     font-weight: bold;
 }
+
 .footer-bottom {
     margin-top: 65px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .apps-download {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .app-down {
     width: 135px;
     height: 46px;
     transition: .2s;
     display: block;
 }
+
 .app-store {
-    background: no-repeat center/100%  url("./img/Appstore.png");
+    background: no-repeat center/100% url("./img/Appstore.png");
     margin-right: 15px;
 }
+
 .app-store:hover {
-    background: no-repeat center/100%  url("./img/Appstore-lil.png");
+    background: no-repeat center/100% url("./img/Appstore-lil.png");
 }
+
 .google-play {
-    background: no-repeat center/100%  url("./img/GooglePlay.png");
+    background: no-repeat center/100% url("./img/GooglePlay.png");
 }
+
 .google-play:hover {
-    background: no-repeat center/100%  url("./img/GooglePlay-lil.png");
+    background: no-repeat center/100% url("./img/GooglePlay-lil.png");
 }
+
 @media (max-width: 970px) {
-  .container {
-    width: 98%;
-  }
+    .container {
+        width: 98%;
+    }
 }

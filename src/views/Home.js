@@ -1,6 +1,4 @@
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 import React from "react";
-import logo from '../img/logo.png'
 import Menu from '../components/Menu'
 
 const Head = {
@@ -23,7 +21,6 @@ const OrderButton = {
 const Discount = {
     color: '#ffffff',
     width: '100%',
-    // marginTop: '90px',
     height: '415px'
 }
 const BigDiscount = {
