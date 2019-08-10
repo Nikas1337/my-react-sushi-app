@@ -12,6 +12,7 @@
 }
 .menu-filter {
     margin: 20px;
+    cursor: pointer;
 }
 .menu-filter span {
     margin-left: 15px;
