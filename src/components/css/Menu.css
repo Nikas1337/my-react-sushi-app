@@ -1,0 +1,104 @@
+.menu-group-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 110px 0 0;
+    color: #fd1c44;
+    font-weight: bold;
+}
+.menu-group {
+    font-family: 'Stalinist One';
+    margin: 20px;
+}
+.menu-filter {
+    margin: 20px;
+}
+.menu-filter span {
+    margin-left: 15px;
+}
+.menu-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.menu-elem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 170px;
+    font-weight: bold;
+    transition: .2s;
+    padding: 10px;
+}
+.menu-elem:hover {
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+}
+.sushi-m-h {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    align-items: center;
+}
+.sushi-m span {
+}
+.sushi-h-hit, .sushi-h-veg {
+    position: relative;
+    width: 55px;
+    height: 30px;
+}
+.sushi-h-hit {
+    background: #f7cc20;
+}
+.sushi-h-veg {
+    background: #8baf33;
+}
+.sushi-h-hit:after, .sushi-h-veg:after {
+    content: 'Hit';
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
+    bottom: 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.sushi-h-veg:after {
+    content: 'Veg';
+}
+.sushi-img-wrap {
+    width: 100%;
+}
+.sushi-img-wrap img {
+    width: 100%;
+}
+.sushi-name {
+    margin-bottom: 40px;
+    height: 66px;
+}
+.sushi-inside {
+    font-weight: normal;
+    margin: 6px 0;
+    font-size: 0.9rem;
+}
+.sushi-price-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sushi-price {
+    color: #fd1c44;
+    font-size: 1.3rem;
+}
+.sushi-order-amount {
+    margin: 0 15px;
+    cursor: auto!important;
+    width: 20px;
+    user-select: none;
+    display: inline-block;
+    text-align: center;
+}
+.sushi-order span {
+    cursor: pointer;
+}

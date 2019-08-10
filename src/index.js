@@ -3,8 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(<App />, document.getElementById('root'));
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import {addItem} from "./store/actions";
+import { Provider } from 'react-redux'
+import { createStore } from 'redux'
+import cart from './store/reducers'
+const store = createStore(cart)
+// console.log(store.dispatch(addItem({
+//     name:'ssd'
+// })))
+ReactDOM.render(
+    <Provider store={store}>
+        <App />
+    </Provider>
+    , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
