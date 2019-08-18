@@ -1,21 +1,8 @@
 import React from 'react';
 import {Link, NavLink} from "react-router-dom";
 import logo from "../img/logo.png";
-const Logo = {
 
-}
-const Nav = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    color: '#484848',
-    width: '65%'
-}
-const Head = {
-    display: 'flex',
-    justifyContent:'space-between',
-    alignItems:'center',
-    flexWrap: 'wrap'
-}
+
 const HeaderWrap = {
     background: '#ffffff',
     color: '#484848',
@@ -28,14 +15,8 @@ const Header = {
     justifyContent: 'space-between',
     height: '100%'
 }
-const LocationLang = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    width: '300px',
-    alignItems: 'center'
-}
 const City = {
-    marginRight: '10px'
+    margin: '10px'
 }
 const HighLightText = {
     color: '#fd1c44',
@@ -43,16 +24,6 @@ const HighLightText = {
 }
 const Lang = {}
 const Location = {}
-const Info = {
-    width: '470px',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'center'
-}
-const Phone = {
-    textDecoration: 'none',
-    color: 'inherit'
-}
 const User = {
     textDecoration: 'none',
     color: 'inherit'
@@ -84,8 +55,8 @@ let AppHeader = (store) => {
     return (
         <div className='all-head'>
             <header className='header' style={HeaderWrap}>
-                <div className='container' style={Header}>
-                    <div style={LocationLang}>
+                <div className='container header-container' style={Header}>
+                    <div className='header-location'>
                         <div className='lang-choose' style={Lang}>
                             <span style={HighLightText}>RU</span>
                             <span>ENG</span>
@@ -95,12 +66,12 @@ let AppHeader = (store) => {
                             <i style={HighLightText} className="fas fa-caret-down"></i>
                         </div>
                     </div>
-                    <div style={Info}>
-                        <a href='tel:+7(800)9005005' style={Phone}>
+                    <div className='header-info'>
+                        <a href='tel:+7(800)9005005' className='header-phone'>
                             <i style={HighLightText} className="fas fa-phone"></i>
                             8-800-900-500-5
                         </a>
-                        <Link to='/user' style={User}>
+                        <Link to='/user' className='header-user'>
                             <i style={HighLightText} className="fas fa-user"></i>
                             Александр
                         </Link>
@@ -112,16 +83,11 @@ let AppHeader = (store) => {
                 </div>
             </header>
             <div className="nav-wrap ">
-                <div style={Head} className="container">
-                    <div style={Logo} onClick={()=>{
-                        store.addItem({
-                            name:'Филадельфия',
-                            price: 435
-                        })
-                    }} className="logo">
+                <div className="container head">
+                    <div className="logo">
                         <img src={logo} alt=""/>
                     </div>
-                    <nav className="nav" style={Nav}>
+                    <nav className="nav">
                         <NavLink to='/' className='nav-link' activeClassName='nav-link_active'>
                             Главная
                         </NavLink>

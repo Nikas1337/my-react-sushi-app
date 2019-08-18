@@ -21,14 +21,13 @@ function Menu() {
 
 
     return (
-            <div  className='container'>
+            <div  className='header-container container'>
                 <div style={SushiPicker} className="sushi-picker">
                     <NavLink onMouseOver={e => (e.currentTarget.firstChild.src = img11)}
                              onMouseOut={e => (e.currentTarget.firstChild.src = img1)}
                              className="sushi-picker-elem" activeClassName='sushi-picker-active'>
                         <img
                             src={img1}
-
                             alt=""/>
                         <h4>Суши</h4>
                     </NavLink>

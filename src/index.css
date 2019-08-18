@@ -9,6 +9,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #484848;
+  width: 100vw;
+  overflow-x: hidden;
 }
 button {
   border: none;

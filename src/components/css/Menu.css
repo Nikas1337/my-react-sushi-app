@@ -24,7 +24,7 @@
 .menu-main {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .menu-elem {
@@ -35,6 +35,7 @@
     font-weight: bold;
     transition: .2s;
     padding: 10px;
+    margin-bottom: 20px;
 }
 
 .menu-elem:hover {
@@ -123,4 +124,9 @@
 
 .sushi-order span {
     cursor: pointer;
+}
+@media (max-width: 600px) {
+    .sushi-picker-elem h4 {
+        font-size: .8rem;
+    }
 }

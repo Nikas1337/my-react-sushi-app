@@ -18,13 +18,14 @@
 }
 
 .nav-wrapper {
-    background: no-repeat -50px -100px url("./img/sushi/pille-riin.jpg");
+    background: no-repeat center 10% url("./img/sushi/pille-riin.jpg");
+    background-size: 105%;
     height: 500px;
 }
 
 .all-head {
     transition: .2s;
-    width: 100%;
+    width: 100vw;
     z-index: 100;
 }
 
@@ -44,7 +45,41 @@
     padding: 15px 0;
     transition: background .2s, padding .2s;
 }
-
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+    color: #484848;
+    width: 70%;
+    flex-wrap: wrap;
+}
+.nav a {
+    margin-bottom: 5px;
+}
+.header-location {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    align-items: center
+}
+.header-info {
+    width: 480px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center
+}
+.header-info a {
+    margin: 0 10px;
+}
+.header-phone, .header-user {
+    text-decoration: none;
+    color: inherit;
+}
 .nav-wrap.active {
     top: 0;
     position: fixed;
@@ -61,6 +96,7 @@
 
 .discount {
     background: no-repeat 110% 25% url("./img/sushi/sushi_main.png");
+    background-size: 50%;
     margin-top: 60px;
 }
 
@@ -121,9 +157,9 @@
 }
 
 .footer-main {
-    height: 160px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .footer-contacts {
@@ -154,6 +190,7 @@
 .input-field {
     height: 50px;
     margin: 20px 0;
+    display: flex;
 }
 
 .input-field input {
@@ -180,14 +217,16 @@
 .footer-bottom {
     margin-top: 65px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .apps-download {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 10px 0;
 }
 
 .app-down {
@@ -217,5 +256,54 @@
 @media (max-width: 970px) {
     .container {
         width: 98%;
+    }
+    .header-info a {
+        margin-right: 0;
+    }
+    .header-container {
+        width: 100%;
+    }
+}
+@media (max-width: 750px) {
+    .discount {
+        background: transparent;
+    }
+    .head {
+        justify-content: space-around;
+    }
+    .nav {
+        width: 100%;
+    }
+    .header-phone {
+        display: none;
+    }
+}
+@media (max-width: 665px) {
+    .header-info {
+        width: 50%;
+    }
+    .header-location {
+        width: 50%;
+    }
+    .footer-hrefs ul {
+        margin: 50px;
+    }
+}
+@media (max-width: 580px) {
+    .header-user {
+        display: none;
+    }
+}
+@media (max-width: 525px) {
+    .lang-choose {
+        display: none;
+    }
+    .nav-wrapper {
+        background: #a8a8a8;
+    }
+}
+@media (max-width: 450px) {
+    .footer-hrefs ul {
+        margin: 25px;
     }
 }
